@@ -54,7 +54,6 @@ const hasilCalculator = () => {
 }
 
 
-
 // Dom manipulation element with button and operator
 const buttons = document.querySelectorAll('.button');
 for(const button of buttons) {
@@ -78,15 +77,12 @@ for(const button of buttons) {
           return;
          }
 
-
-
      //     Melakukan input nilai
          inputDigit(target.innerText);
          updateDisplay();
      });
 
 }
-
 
 // Update Display
 const updateDisplay = () => {

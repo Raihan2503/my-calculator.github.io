@@ -40,6 +40,7 @@ body { font-family: sans-serif;}
      flex-basis: 25%;
      cursor: pointer;
      font-size: 1.3em;
+     font-weight: bold;
 }
 .operator, .equals {
      background-color: rgba(255, 0, 0, 0.877);
@@ -50,10 +51,10 @@ body { font-family: sans-serif;}
 /* Responsive Mobile Design */
 @media screen and (max-width: 600px) {
      .container {
-          max-width: 350px;
+          max-width: 250px;
      }
      .layar-calculator {
-          font-size: 1.8em;
+          font-size: .9em;
      }
 
      .button {
@@ -62,12 +63,14 @@ body { font-family: sans-serif;}
      }
 }
 
+/* Responsive mobile extra small */
 @media screen and (max-width: 280px) {
      .layar-calculator {
-          font-size: 1em;
+          font-size: .8em;
      }
 
      .button {
+          font-size: .9em;
           padding: 8px;
      }
 }
