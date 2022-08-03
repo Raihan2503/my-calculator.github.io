@@ -62,6 +62,7 @@ body { font-family: sans-serif;}
      }
 }
 
+/* Responsive mobile extra small */
 @media screen and (max-width: 280px) {
      .layar-calculator {
           font-size: 1em;
