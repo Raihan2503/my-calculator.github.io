@@ -45,7 +45,7 @@ background-color: rgba(255, 0, 0, 0.877);
 }
 .equals{flex-basis: 50%;}
 
-// Responsive Mobile small
+/* Responsive Mobile Small */
 @media screen and (max-width: 600px) {
      .container {
           max-width: 350px;
@@ -60,8 +60,7 @@ background-color: rgba(255, 0, 0, 0.877);
      }
 }
 
-
-// Responsive mobile extra small
+/* Responsive mobile Extra Small */
 @media screen and (max-width: 280px) {
      .layar-calculator {
           font-size: 1em;
