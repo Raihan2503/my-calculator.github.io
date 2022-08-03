@@ -48,12 +48,25 @@ background-color: rgba(255, 0, 0, 0.877);
 
 /* Responsive Mobile Design */
 @media screen and (max-width: 600px) {
+     .container {
+          max-width: 350px;
+     }
+     .layar-calculator {
+          font-size: 1.8em;
+     }
+
+     .button {
+          font-size: 1.2em;
+          padding: 10px;
+     }
+}
+
+@media screen and (max-width: 280px) {
      .layar-calculator {
           font-size: 1em;
      }
 
      .button {
-          font-size: 1em;
-          padding: 5px;
+          padding: 8px;
      }
 }
