@@ -21,7 +21,7 @@ let firstNumber = null;
 // operatorSet
 let operatorSet = null;
 const handleOperator = (operator) => {
-     firstNumber = parseInt(displayNumber.innerText);
+     firstNumber = Number(displayNumber.innerText);
      operatorSet = operator;
      displayNumber.innerText = "0";
 }
@@ -29,16 +29,21 @@ const handleOperator = (operator) => {
 // Hasil Calculator
 const hasilCalculator = () => {
      if(operatorSet.classList.contains('tambah')) {
-          result = parseInt(displayNumber.innerText) + firstNumber;
+          result = Number(displayNumber.innerText) + firstNumber;
           displayNumber.innerText = result;
      } else if(operatorSet.classList.contains('kurang')) {
-          result = firstNumber - parseInt(displayNumber.innerText);
+          result = firstNumber - Number(displayNumber.innerText);
           displayNumber.innerText = result;
      } else if(operatorSet.classList.contains('kali')) {
-          result = firstNumber * parseInt(displayNumber.innerText);
-          displayNumber.innerText = result;
+          result = firstNumber * Number(displayNumber.innerText);
+          r = result.toFixed(2);
+          if(result % 1 != 0) {
+               displayNumber.innerText = r;
+          } else {
+               displayNumber.innerText = result;
+          }
      } else if(operatorSet.classList.contains('bagi')) {
-          result = firstNumber / parseInt(displayNumber.innerText);
+          result = firstNumber / Number(displayNumber.innerText);
           r = result.toFixed(2);
           if(result % 1 != 0) {
                displayNumber.innerText = r;
